@@ -1,0 +1,168 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f7f7f7; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+header, section, footer {
+    margin-bottom: 30px; /* Increased margin for better spacing */
+    padding: 20px; /* Increased padding for better spacing */
+}
+
+/* Header Layout */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333; /* Dark grey background */
+    color: #fff; /* White text */
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.student, .contact-info {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Links styling */
+a {
+    color: #fff; /* White links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ddd; /* Light gray on hover */
+}
+
+/* Section Styling */
+section {
+    background: #fff; /* White background for sections */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    border-bottom: 2px solid #000; /* Black border for section headers */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333; /* Dark grey */
+    color: #fff; /* White text */
+}
+
+.github-icon {
+    width: 20px; /* Set the icon size */
+    height: 20px; /* Set the icon size */
+    border-radius: 50%; /* Make the icon circular */
+    margin-right: 5px; /* Space between the icon and text */
+    vertical-align: middle; /* Align icon with the text */
+}
+
+.github-link {
+    display: inline-block; /* Align the link items in a line */
+    color: #fff; /* White text for the link */
+    text-decoration: none; /* No underline */
+    background-color: transparent; /* Transparent background */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.github-link:hover {
+    text-decoration: underline;
+    color: #ddd; /* Light gray on hover */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header, section, footer {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+
+    .header-left, .header-right {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+        text-align: left; /* Ensure text aligns left */
+    }
+
+    .profile-pic {
+        width: 80px; /* Smaller profile picture */
+        height: 80px; /* Smaller profile picture */
+        margin-bottom: 10px; /* Space between image and text */
+    }
+
+    .contact-info {
+        font-size: 0.8rem; /* Smaller font size for contact info */
+    }
+
+    .github-icon {
+        width: 15px; /* Smaller GitHub icon */
+        height: 15px; /* Smaller GitHub icon */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller heading */
+    }
+
+    .navigation a, .social-media a, .github-link {
+        font-size: 0.8rem; /* Smaller links */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Stack header content vertically on very small screens */
+    }
+
+    .header-left, .header-right {
+        width: 100%; /* Full width */
+        justify-content: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+
+    .student, .contact-info {
+        text-align: center; /* Center smaller text elements */
+    }
+}
